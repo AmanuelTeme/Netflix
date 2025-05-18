@@ -1,0 +1,65 @@
+.banner {
+    color: white;
+    object-fit: contain;
+    height: 90vh;
+    position: relative;
+  }
+  
+  .banner__contents {
+    position: absolute;
+    top: 30%;
+    left: 30px;
+    z-index: 1;
+    max-width: 600px;
+  }
+  
+  .banner__title {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+  }
+  
+  .banner__buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .banner__button {
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding: 0.5rem 2rem;
+    background-color: rgba(51, 51, 51, 0.5);
+    transition: all 0.2s;
+  }
+  
+  .banner__button:hover {
+    background-color: #e6e6e6;
+    color: #000;
+  }
+  
+  .banner__description {
+    width: 45rem;
+    line-height: 1.3;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    max-width: 360px;
+    height: 80px;
+  }
+  
+  .banner--fadeBottom {
+    height: 7.4rem;
+    background-image: linear-gradient(
+      180deg,
+      transparent,
+      rgba(37, 37, 37, 0.61),
+      #111
+    );
+    position: absolute;
+    bottom: 0;
+    width:100%;
+}
