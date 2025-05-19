@@ -1,0 +1,144 @@
+.header_outer_container {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  min-height: 10vh;
+  color: white;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+}
+
+.header_container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_container ul {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.95);
+  padding: 1rem;
+  list-style: none;
+  gap: 15px;
+  width: 100%;
+}
+.header_right ul {
+  flex-direction: row;
+}
+
+.header_container.active {
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+}
+
+.header_container.active ul {
+  position: absolute;
+  top: auto;
+  left: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header_container.active ul img {
+  display: none;
+}
+
+.header_container.active .header_left,
+.header_container.active .header_right {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.header_container.active .none {
+  position: absolute;
+}
+
+.header_container.active .header_right ul {
+  flex-direction: row;
+  padding-top: 5vh;
+}
+
+.header_container.active .header_left ul {
+  flex-direction: column;
+  justify-content: right;
+  align-items: start;
+  padding-left: 50px;
+}
+.header_container.active input {
+  display: none;
+}
+.header_left {
+  width: 100%;
+}
+
+.header_right {
+  width: 100%;
+}
+
+.header_left ul li:first-child {
+  width: 10%;
+  min-width: 60px;
+}
+
+img {
+  width: 100px;
+}
+
+.menu_toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .menu_toggle {
+    display: none;
+  }
+  .header_container {
+    font-size: 0.8rem;
+    gap: 3rem;
+    /* border: 2px solid red; */
+  }
+
+  .none {
+    display: none;
+  }
+
+  .header_container ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+  }
+  .header_left {
+    width: 70%;
+  }
+
+  .header_right {
+    width: 30%;
+  }
+
+  .header_left ul li:first-child {
+    width: 10%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
