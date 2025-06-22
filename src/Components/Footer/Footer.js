@@ -15,7 +15,11 @@ const Footer = () => {
             <YouTubeIcon />
           </div>
           <div className="footer_data">
+<<<<<<< HEAD
             <div>
+=======
+            <div className="footer_link">
+>>>>>>> 5664f830ce40df7116e81f99558864f1a9983494
               <ul>
                 <li>Audio Description</li>
                 <li>Investor Relations</li>
@@ -44,13 +48,23 @@ const Footer = () => {
               </ul>
             </div>
           </div>
+<<<<<<< HEAD
           {/* <div className='service_code'>
+=======
+
+          <div className='service_code'>
+>>>>>>> 5664f830ce40df7116e81f99558864f1a9983494
                 <p>
                   service  Code
                 </p>
 
+<<<<<<< HEAD
                 </div> */}
           <button className="servcie-code-btn"> Service Code</button>
+=======
+                </div>
+          {/* <button className="servcie-code-btn"> Service Code</button> */}
+>>>>>>> 5664f830ce40df7116e81f99558864f1a9983494
           <br />
           <div className="copy_write">© copy; 1997-2025 Netflix, Inc.</div>
         </div>
